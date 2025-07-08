@@ -1,181 +1,115 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!DOCTYPE html><html lang="pl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>System Lwa — Twoja Twierdza</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap');
-  body {
-    margin: 0; padding: 0;
-    background: #000000;
-    color: #d4af37;
-    font-family: 'Montserrat', sans-serif;
-    display: flex; flex-direction: column; min-height: 100vh;
-  }
-  header {
-    background: #111;
-    padding: 20px 40px;
-    display: flex; align-items: center; gap: 20px;
-    border-bottom: 2px solid #d4af37;
-  }
-  header img {
-    height: 60px;
-  }
-  header h1 {
-    font-family: 'Anton', sans-serif;
-    font-size: 2.8rem;
-    margin: 0;
-    color: #d4af37;
-    letter-spacing: 0.1em;
-    user-select: none;
-  }
-  main {
-    flex-grow: 1;
-    padding: 40px 20px;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  section {
-    margin-bottom: 60px;
-  }
-  h2 {
-    font-family: 'Anton', sans-serif;
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    border-left: 6px solid #d4af37;
-    padding-left: 10px;
-    text-transform: uppercase;
-  }
-  p, ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #e6d68c;
-  }
-  ul {
-    padding-left: 20px;
-  }
-  ul li {
-    margin-bottom: 10px;
-  }
-  .package {
-    border: 2px solid #d4af37;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 25px;
-    background: #111;
-  }
-  .package h3 {
-    margin-top: 0;
-    font-family: 'Anton', sans-serif;
-    font-size: 1.5rem;
-    color: #ffd700;
-  }
-  .price {
-    font-size: 1.4rem;
-    color: #d4af37;
-    margin-bottom: 15px;
-  }
-  .btn-paypal {
-    display: inline-block;
-    background: #d4af37;
-    color: #000;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 0.08em;
-    transition: background 0.3s ease;
-  }
-  .btn-paypal:hover {
-    background: #ffd700;
-    color: #111;
-  }
-  footer {
-    background: #111;
-    padding: 20px 40px;
-    text-align: center;
-    color: #777;
-    font-size: 0.9rem;
-    border-top: 2px solid #d4af37;
-  }
-  a.contact-link {
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: 700;
-  }
-  a.contact-link:hover {
-    text-decoration: underline;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Lwa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: gold;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .start-button {
+      background: linear-gradient(45deg, #f0b70a, #ffdd57);
+      color: #1a1a1a;
+      font-weight: 900;
+      font-size: 1.5rem;
+      padding: 18px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(255, 221, 87, 0.7);
+      transition: all 0.3s ease;
+      display: inline-block;
+      letter-spacing: 1.2px;
+      margin-top: 20px;
+    }
+    .start-button:hover {
+      box-shadow: 0 0 30px rgba(255, 221, 87, 1);
+      transform: scale(1.1);
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: gold;
+    }
+    .faq-item, .member-plan {
+      background: #1a1a1a;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border-left: 4px solid gold;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .contact a {
+      color: #f0b70a;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <img src="https://i.postimg.cc/tgbKYdGf/file-00000000b67461f78b0448a92f6b3c42.png" alt="Herb System Lwa - Złoty Lew" />
-  <h1>System Lwa</h1>
-</header>
-<main>
-  <section>
-    <h2>TWÓJ PRÓG PRZEMIANY</h2>
-    <p>Nie jesteś tu przez przypadek. To jest zaproszenie do przestrzeni, której <strong>nie pokazuje się każdemu.</strong></p>
-    <p><strong>System Lwa</strong> to droga świadomej siły i klasy. Wejście, które odmienia.</p>
-  </section>
-  
-  <section>
-    <h2>Pakiety</h2>
-    
-    <div class="package">
-      <h3>Pakiet Podstawowy – Wejście do Przestrzeni</h3>
-      <p>Twój pierwszy krok. Dotknij, zanim zapukasz mocniej.</p>
-      <div class="price">49 zł</div>
-      <a class="btn-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=system.lwa.kurwa@gmail.com&item_name=Pakiet%20Podstawowy%20Systemu%20Lwa&amount=49&currency_code=PLN" target="_blank" rel="noopener">Kup teraz</a>
+  <header>
+    <h1>System Lwa</h1>
+    <a class="start-button" href="https://www.canva.com/design/DAGskocz6w8/RqNWKJBPnRrNxII_wmqqiw/edit" target="_blank">START</a>
+  </header>  <section>
+    <h2>Członkostwo</h2>
+    <div class="member-plan">
+      <h3>Pakiet Podstawowy – 49 zł/miesiąc</h3>
+      <p>Dostęp do prezentacji + dostęp do zamkniętej społeczności Telegram.</p>
     </div>
-    
-    <div class="package">
-      <h3>Pakiet Premium – Oko Wewnętrzne</h3>
-      <p>Dla tych, którzy nie tylko widzą, ale i zaczynają rozumieć.</p>
-      <div class="price">79 zł</div>
-      <a class="btn-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=system.lwa.kurwa@gmail.com&item_name=Pakiet%20Premium%20Systemu%20Lwa&amount=79&currency_code=PLN" target="_blank" rel="noopener">Kup teraz</a>
+    <div class="member-plan">
+      <h3>Pakiet Premium – 79 zł/miesiąc</h3>
+      <p>Wszystko z pakietu podstawowego + dostęp do webinarów, PDF-ów, rytuałów i zadań.</p>
     </div>
-    
-    <div class="package">
-      <h3>Złoto Lwa – Serce Systemu</h3>
-      <p>Dla tych, którzy już wiedzą, że nie ma powrotu. Dostają więcej, głębiej, bliżej.</p>
-      <div class="price">129 zł</div>
-      <a class="btn-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=system.lwa.kurwa@gmail.com&item_name=Zloto%20Lwa%20Systemu&amount=129&currency_code=PLN" target="_blank" rel="noopener">Kup teraz</a>
+    <div class="member-plan">
+      <h3>Złoto Lwa – 129 zł/miesiąc</h3>
+      <p>Wszystko z Premium + priorytetowy kontakt, sesje 1:1 i dostęp do Kręgu Wewnętrznego.</p>
     </div>
-  </section>
-  
-  <section>
-    <h2>Bractwo Lwa – Członkostwo</h2>
-    <p>Dołącz do kręgu. Wejdź do wnętrza systemu – tam, gdzie zaczyna się gra o świadomość, a kończy teatr świata.</p>
-    <div class="price">144 zł / miesiąc</div>
-    <a class="btn-paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=system.lwa.kurwa@gmail.com&item_name=Bractwo%20Lwa&currency_code=PLN&a3=144&p3=1&t3=M" target="_blank" rel="noopener">Dołącz jako członek</a>
-  </section>
-  
-  <section>
-    <h2>Płatności</h2>
-    <p>Aktualnie płatności realizowane są przez <strong>PayPal</strong> – bezpiecznie i szybko.</p>
-    <p>Wkrótce wprowadzimy również możliwość płatności kartą oraz przelewem bankowym (Stripe).</p>
-    <p><em>System Lwa rośnie. A z nim – Twoja droga.</em></p>
-  </section>
-  
-  <section>
+    <div class="member-plan">
+      <h3>Bractwo – 144 zł/miesiąc</h3>
+      <p>Symboliczny poziom – wejście do grona zaawansowanych, z kluczem wewnętrznego rozwoju. Tajne treści.</p>
+    </div>
+  </section>  <section>
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <strong>Czy mogę anulować subskrypcję?</strong>
+      <p>Tak, w każdej chwili. Kontakt przez e-mail lub Telegram.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Jak otrzymam dostęp po płatności?</strong>
+      <p>Automatycznie przez e-mail oraz zaproszenie do grupy Telegram.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Czy mogę zapłacić kartą?</strong>
+      <p>Na razie dostępny jest PayPal. Wkrótce – płatność kartą i bankowością.</p>
+    </div>
+  </section>  <section>
     <h2>Kontakt</h2>
-    <p>Masz pytania? Czujesz, że to Twoje miejsce, ale potrzebujesz słowa? Odezwij się:</p>
-    <ul>
-      <li>📧 <a class="contact-link" href="mailto:system.lwa.kurwa@gmail.com">system.lwa.kurwa@gmail.com</a></li>
-      <li>☎️ +48 665 805 162</li>
-      <li>💬 <a class="contact-link" href="https://t.me/SystemLwa" target="_blank" rel="noopener">@SystemLwa (Telegram)</a></li>
-    </ul>
-  </section>
-</main>
-
-<footer>
-  System Lwa © 2025 – Twój Lew, Twoja Twierdza. Wciąż rozwijamy przestrzeń.
-</footer>
+    <p class="contact">
+      E-mail: <a href="mailto:kontaktsystemlwa@gmail.com">kontaktsystemlwa@gmail.com</a><br />
+      Telefon: <a href="tel:+48665805162">+48 665 805 162</a><br />
+      Telegram: <a href="https://t.me/SystemLwa" target="_blank">@SystemLwa</a>
+    </p>
+  </section>  <footer>
+    <p>&copy; 2025 System Lwa. Wszystkie prawa zastrzeżone.</p>
+  </footer>
 </body>
 </html>
