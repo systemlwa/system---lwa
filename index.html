@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="pl">
+      <!DOCTYPE html><html lang="pl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +53,7 @@
       font-size: 1rem;
       line-height: 1.6;
     }
-    .pay-button {
+    .pay-button, .more-button {
       display: inline-block;
       margin-top: 15px;
       padding: 12px 24px;
@@ -70,18 +70,6 @@
       font-size: 0.9rem;
       color: #aaa;
     }
-    .pdf-container {
-      width: 100%;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-    .pdf-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
   </style>
 </head>
 <body>
@@ -90,12 +78,12 @@
     <h1>System Lwa</h1>
   </header>
 
-  <!-- 📄 PDF NAD OFERTAMI -->
-  <div class="pdf-container">
-    <iframe src="https://drive.google.com/file/d/1-eh6Li81keyyzhS28lXokhopFIUrrAy5/preview" allow="autoplay"></iframe>
-  </div>
-
   <section>
+    <!-- 🔗 Przycisk do PDF-a -->
+    <div style="text-align: center; margin-bottom: 30px;">
+      <a class="more-button" href="https://drive.google.com/file/d/1-eh6Li81keyyzhS28lXokhopFIUrrAy5/view?usp=drivesdk" target="_blank">Zobacz coś więcej</a>
+    </div>
+
     <div class="pakiet">
       <h2>Pakiet Podstawowy – 49 zł</h2>
       <p>Dostęp do podstawowych treści Systemu Lwa. Idealne na początek Twojej podróży.</p>
@@ -127,4 +115,4 @@
     Telegram: <a href="https://t.me/SystemLwa" target="_blank">@SystemLwa</a>
   </footer>
 </body>
-</html>
+      </html>
