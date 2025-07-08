@@ -3,113 +3,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>System Lwa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
-      color: #f1f1f1;
-      line-height: 1.6;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      overflow-x: hidden;
     }
     header {
       text-align: center;
-      padding: 60px 20px 20px;
+      padding: 40px 20px 20px;
+      position: relative;
     }
-    header h1 {
+    .logo {
+      width: 140px;
+      animation: dropIn 1.5s ease forwards;
+      opacity: 0;
+    }
+    @keyframes dropIn {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
       font-size: 3rem;
-      color: gold;
-      text-shadow: 2px 2px 8px #000;
-    }
-    .start-button {
-      background: linear-gradient(45deg, #f0b70a, #ffdd57);
-      color: #1a1a1a;
-      font-weight: 900;
-      font-size: 1.5rem;
-      padding: 18px 50px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 0 15px rgba(255, 221, 87, 0.7);
-      transition: all 0.3s ease;
-      display: inline-block;
-      letter-spacing: 1.2px;
       margin-top: 20px;
-    }
-    .start-button:hover {
-      box-shadow: 0 0 30px rgba(255, 221, 87, 1);
-      transform: scale(1.1);
+      text-transform: uppercase;
     }
     section {
-      max-width: 1000px;
+      padding: 30px 20px;
+      max-width: 800px;
       margin: auto;
-      padding: 40px 20px;
     }
-    h2 {
-      color: gold;
-    }
-    .faq-item, .member-plan {
-      background: #1a1a1a;
-      padding: 20px;
-      margin-bottom: 20px;
+    .pakiet {
+      border: 1px solid #555;
       border-radius: 10px;
-      border-left: 4px solid gold;
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: #1a1a1a;
+    }
+    .pakiet h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #f9d342;
+    }
+    .pakiet p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .pay-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: #f9d342;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
     footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
       font-size: 0.9rem;
-      color: #888;
-    }
-    .contact a {
-      color: #f0b70a;
-      text-decoration: none;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://i.postimg.cc/tgbKYdGf/file-00000000b67461f78b0448a92f6b3c42.png" alt="Herb Lwa" class="logo" />
     <h1>System Lwa</h1>
-    <a class="start-button" href="https://www.canva.com/design/DAGskocz6w8/RqNWKJBPnRrNxII_wmqqiw/edit" target="_blank">START</a>
   </header>  <section>
-    <h2>Członkostwo</h2>
-    <div class="member-plan">
-      <h3>Pakiet Podstawowy – 49 zł/miesiąc</h3>
-      <p>Dostęp do prezentacji + dostęp do zamkniętej społeczności Telegram.</p>
-    </div>
-    <div class="member-plan">
-      <h3>Pakiet Premium – 79 zł/miesiąc</h3>
-      <p>Wszystko z pakietu podstawowego + dostęp do webinarów, PDF-ów, rytuałów i zadań.</p>
-    </div>
-    <div class="member-plan">
-      <h3>Złoto Lwa – 129 zł/miesiąc</h3>
-      <p>Wszystko z Premium + priorytetowy kontakt, sesje 1:1 i dostęp do Kręgu Wewnętrznego.</p>
-    </div>
-    <div class="member-plan">
-      <h3>Bractwo – 144 zł/miesiąc</h3>
-      <p>Symboliczny poziom – wejście do grona zaawansowanych, z kluczem wewnętrznego rozwoju. Tajne treści.</p>
-    </div>
-  </section>  <section>
-    <h2>FAQ</h2>
-    <div class="faq-item">
-      <strong>Czy mogę anulować subskrypcję?</strong>
-      <p>Tak, w każdej chwili. Kontakt przez e-mail lub Telegram.</p>
-    </div>
-    <div class="faq-item">
-      <strong>Jak otrzymam dostęp po płatności?</strong>
-      <p>Automatycznie przez e-mail oraz zaproszenie do grupy Telegram.</p>
-    </div>
-    <div class="faq-item">
-      <strong>Czy mogę zapłacić kartą?</strong>
-      <p>Na razie dostępny jest PayPal. Wkrótce – płatność kartą i bankowością.</p>
-    </div>
-  </section>  <section>
-    <h2>Kontakt</h2>
-    <p class="contact">
-      E-mail: <a href="mailto:kontaktsystemlwa@gmail.com">kontaktsystemlwa@gmail.com</a><br />
-      Telefon: <a href="tel:+48665805162">+48 665 805 162</a><br />
-      Telegram: <a href="https://t.me/SystemLwa" target="_blank">@SystemLwa</a>
-    </p>
+    <div class="pakiet">
+      <h2>Pakiet Podstawowy – 49 zł</h2>
+      <p>Dostęp do podstawowych treści Systemu Lwa. Idealne na początek Twojej podróży.</p>
+      <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Kup Pakiet</a>
+    </div><div class="pakiet">
+  <h2>Pakiet Premium – 79 zł</h2>
+  <p>Więcej wiedzy. Więcej narzędzi. Więcej mocy. Rozwiń swój potencjał z poziomu Premium.</p>
+  <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Kup Pakiet</a>
+</div>
+
+<div class="pakiet">
+  <h2>Złoto Lwa – 129 zł</h2>
+  <p>Dostęp do unikalnych materiałów, osobiste prowadzenie i wsparcie w Twojej transformacji.</p>
+  <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Kup Pakiet</a>
+</div>
+
+<div class="pakiet">
+  <h2>Bractwo Lwa – 144 zł</h2>
+  <p>Członkostwo wewnętrzne. Inicjacja. Kontakt. Spotkania. Rytuał obecności. Aura stada.</p>
+  <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Dołącz do Bractwa</a>
+</div>
+
+<p style="text-align:center; font-size:0.9rem; color:#888;">
+  💡 Po kliknięciu i przejściu do PayPala – wpisz odpowiednią kwotę i nazwę pakietu w opisie płatności. Wkrótce uruchamiamy płatności kartą i subskrypcje.
+</p>
+
   </section>  <footer>
-    <p>&copy; 2025 System Lwa. Wszystkie prawa zastrzeżone.</p>
+    Kontakt: <a href="mailto:kontaktsystemlwa@gmail.com">kontaktsystemlwa@gmail.com</a><br>
+    Telegram: <a href="https://t.me/SystemLwa" target="_blank">@SystemLwa</a>
   </footer>
 </body>
 </html>
