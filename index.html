@@ -1,130 +1,120 @@
 <!DOCTYPE html><html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>System Lwa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Lwa - Wchodzę do Dżungli</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #0d0d0d;
-      color: #f2f2f2;
-      overflow-x: hidden;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px 20px;
-      position: relative;
-    }
-    .logo {
-      width: 140px;
-      animation: dropIn 1.5s ease forwards;
-      opacity: 0;
-    }
-    @keyframes dropIn {
-      0% { transform: translateY(-100px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-top: 20px;
-      text-transform: uppercase;
-    }
-    section {
-      padding: 30px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .pdf-image {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 40px auto;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(249, 211, 66, 0.25);
-    }
-    .pakiet {
-      border: 1px solid #555;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
-      background-color: #1a1a1a;
-    }
-    .pakiet h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      color: #f9d342;
-    }
-    .pakiet p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .pay-button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 24px;
-      background-color: #f9d342;
-      color: #000;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('czarna-siersc.jpg') center/cover no-repeat fixed;
+  color: gold;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 15px gold, 0 0 30px black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+section {
+  padding: 4rem 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 1rem auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid gold;
+  padding-bottom: 0.5rem;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.postimg.cc/tgbKYdGf/file-00000000b67461f78b0448a92f6b3c42.png" alt="Herb Lwa" class="logo" />
-    <h1>System Lwa</h1>
-  </header>
-
-  <section>
-    <!-- 📜 Nowe, ostre obrazy -->
-    <img class="pdf-image" src="https://i.postimg.cc/z5gW7CJd/SYSTEM-LWA-20250708-165339-0000.jpg" alt="System Lwa - strona 1" />
-    <img class="pdf-image" src="https://i.postimg.cc/mT8FkVwr/SYSTEM-LWA-20250708-165339-0001.jpg" alt="System Lwa - strona 2" />
-    <img class="pdf-image" src="https://i.postimg.cc/Gh3m1w6x/SYSTEM-LWA-20250708-165339-0002.jpg" alt="System Lwa - strona 3" />
-    <img class="pdf-image" src="https://i.postimg.cc/fTHTzqNn/SYSTEM-LWA-20250708-165339-0003.jpg" alt="System Lwa - strona 4" />
-    <img class="pdf-image" src="https://i.postimg.cc/FzpFJDkS/SYSTEM-LWA-20250708-165339-0004.jpg" alt="System Lwa - strona 5" />
-    <img class="pdf-image" src="https://i.postimg.cc/1Rr3T57z/SYSTEM-LWA-20250708-165339-0005.jpg" alt="System Lwa - strona 6" />
-
-    <div class="pakiet">
-      <h2>Pakiet Podstawowy – 49 zł</h2>
-      <p>Dostęp do podstawowych treści Systemu Lwa. Idealne na początek Twojej podróży.</p>
-      <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Kup Pakiet</a>
-    </div>
-    <div class="pakiet">
-      <h2>Pakiet Premium – 79 zł</h2>
-      <p>Więcej wiedzy. Więcej narzędzi. Więcej mocy. Rozwiń swój potencjał z poziomu Premium.</p>
-      <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Kup Pakiet</a>
-    </div>
-    <div class="pakiet">
-      <h2>Złoto Lwa – 129 zł</h2>
-      <p>Dostęp do unikalnych materiałów, osobiste prowadzenie i wsparcie w Twojej transformacji.</p>
-      <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Kup Pakiet</a>
-    </div>
-    <div class="pakiet">
-      <h2>Bractwo Lwa – 144 zł</h2>
-      <p>Członkostwo wewnętrzne. Inicjacja. Kontakt. Spotkania. Rytuał obecności. Aura stada.</p>
-      <a class="pay-button" href="https://www.paypal.com/paypalme/systemlwa" target="_blank">Dołącz do Bractwa</a>
-    </div>
-
-    <p style="text-align:center; font-size:0.9rem; color:#888;">
-      💡 Po kliknięciu i przejściu do PayPala – wpisz odpowiednią kwotę i nazwę pakietu w opisie płatności. Wkrótce uruchamiamy płatności kartą i subskrypcje.
-    </p>
-  </section>
-
-  <footer>
-    Kontakt: <a href="mailto:kontaktsystemlwa@gmail.com">kontaktsystemlwa@gmail.com</a><br>
-    Telegram: <a href="https://t.me/SystemLwa" target="_blank">@SystemLwa</a>
+    <!-- LOGO TU BĘDZIE -->
+    <h1 onclick="window.location.href='system.html'">Wchodzę do Dżungli</h1>
+  </header>  <nav>
+    <a href="#manifest">Manifest</a>
+    <a href="#system">System</a>
+    <a href="#mentalnosc">Mentalność Króla</a>
+    <a href="#przestrzen">Przestrzeń</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>  <section id="manifest">
+    <h2>Manifest Lwa</h2>
+    <p>Jestem ogniem i ciszą. Nie tłumaczę się — wybieram. Każdy krok to siła, każdy oddech to decyzja. Nie szukam drogi — jestem drogą.</p>
+  </section>  <section id="system">
+    <h2>System Lwa</h2>
+    <p>To nie aplikacja. To zbroja. To tarcza, która chroni. To miecz, który przecina iluzję. Tutaj tworzysz swoją przestrzeń — wolną, nietykalną.</p>
+  </section>  <section id="mentalnosc">
+    <h2>Mentalność Króla</h2>
+    <p>Król nie prosi o pozwolenie. Król nie walczy z cieniem — on zapala światło. Codziennie wchodzę do siebie głębiej. Codziennie rządzę sobą mocniej.</p>
+  </section>  <section id="przestrzen">
+    <h2>Przestrzeń Niepodległa</h2>
+    <p>Miejsce, gdzie kończy się kontrola, a zaczyna wolność. Narzędzia. Ochrona. Komunikacja z rdzenia. Tutaj czujesz, że jesteś u siebie.</p>
+  </section>  <section id="kontakt">
+    <h2>Kontakt / Wezwanie</h2>
+    <p>Masz coś do powiedzenia — mów. Masz coś do zbudowania — pisz. To nie formularz, to brama.</p>
+  </section>  <footer>
+    &copy; 2025 System Lwa. Wszystkie prawa zarezerwowane.
   </footer>
 </body>
 </html>
